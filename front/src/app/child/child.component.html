@@ -1,0 +1,18 @@
+
+<div class="container">
+  <button (click)="getReq()">GET</button>
+ <ul>
+   <li *ngFor="let systemObject of systemObjects">
+     <h1>{{systemObject?.name}}</h1>
+     <div>id  = {{systemObject?.id}}</div>
+   </li>
+</ul>
+  <div> id =
+  <input type="number" name="id" [(ngModel)]="systemObj.id" />
+  </div>
+  <div> name =
+  <input type="string" name="name" [(ngModel)]="systemObj.name" />
+  <button (click)="postReq()">POST</button>
+  </div>
+</div>
+
